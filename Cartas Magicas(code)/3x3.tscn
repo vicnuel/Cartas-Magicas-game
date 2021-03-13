@@ -1,0 +1,160 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://label.tscn" type="PackedScene" id=1]
+[ext_resource path="res://3x3.gd" type="Script" id=2]
+[ext_resource path="res://imagens/A5.png" type="Texture" id=3]
+[ext_resource path="res://imagens/A6.png" type="Texture" id=4]
+[ext_resource path="res://imagens/A2.png" type="Texture" id=5]
+[ext_resource path="res://imagens/A7.png" type="Texture" id=6]
+[ext_resource path="res://imagens/A3.png" type="Texture" id=7]
+[ext_resource path="res://imagens/A8.png" type="Texture" id=8]
+[ext_resource path="res://imagens/A1.png" type="Texture" id=9]
+[ext_resource path="res://imagens/A4.png" type="Texture" id=10]
+[ext_resource path="res://imagens/A9.png" type="Texture" id=11]
+[ext_resource path="res://imagens/mago - Copy.png" type="Texture" id=12]
+[ext_resource path="res://imagens/fundo.png" type="Texture" id=13]
+
+[node name="3x3" type="Node2D"]
+position = Vector2( -4.17169, 0.000549316 )
+scale = Vector2( 1.24, 1.21303 )
+script = ExtResource( 2 )
+
+[node name="label" parent="." instance=ExtResource( 1 )]
+position = Vector2( 518.062, 295.897 )
+scale = Vector2( 1.43892, 1.46421 )
+texture = ExtResource( 13 )
+
+[node name="A0" type="Sprite" parent="."]
+position = Vector2( 221.048, 208.803 )
+texture = ExtResource( 9 )
+
+[node name="A1" type="Sprite" parent="."]
+position = Vector2( 221.048, 358.803 )
+texture = ExtResource( 5 )
+
+[node name="A2" type="Sprite" parent="."]
+position = Vector2( 221.048, 508.803 )
+texture = ExtResource( 7 )
+
+[node name="A3" type="Sprite" parent="."]
+position = Vector2( 521.048, 208.803 )
+texture = ExtResource( 10 )
+
+[node name="A4" type="Sprite" parent="."]
+position = Vector2( 521.048, 358.803 )
+texture = ExtResource( 3 )
+
+[node name="A5" type="Sprite" parent="."]
+position = Vector2( 521.048, 508.803 )
+texture = ExtResource( 4 )
+
+[node name="A6" type="Sprite" parent="."]
+position = Vector2( 821.048, 208.803 )
+texture = ExtResource( 6 )
+
+[node name="A7" type="Sprite" parent="."]
+position = Vector2( 821.048, 358.803 )
+scale = Vector2( 1, 0.942478 )
+texture = ExtResource( 8 )
+
+[node name="A8" type="Sprite" parent="."]
+position = Vector2( 821.048, 508.803 )
+scale = Vector2( 1, 0.95045 )
+texture = ExtResource( 11 )
+
+[node name="lbl1" type="Label" parent="."]
+margin_left = 236.595
+margin_top = 8.0
+margin_right = 512.595
+margin_bottom = 36.0
+rect_scale = Vector2( 2.26665, 3.03889 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.878431, 1, 0, 1 )
+text = "Escolha uma carta e indique sua coluna."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="lbl2" type="Label" parent="."]
+visible = false
+margin_left = 248.0
+margin_top = 120.826
+margin_right = 383.0
+margin_bottom = 139.826
+rect_scale = Vector2( 4.42754, 6.74264 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 1, 0.937255, 0, 1 )
+text = "Sua carta escolhida:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+margin_left = 172.986
+margin_top = 82.4256
+margin_right = 239.986
+margin_bottom = 102.426
+rect_scale = Vector2( 1.52, 1.92 )
+custom_colors/font_color_disabled = Color( 1, 1, 1, 1 )
+text = "Coluna 1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button2" type="Button" parent="."]
+margin_left = 466.364
+margin_top = 81.6012
+margin_right = 533.364
+margin_bottom = 101.601
+rect_scale = Vector2( 1.64, 1.8 )
+custom_colors/font_color_disabled = Color( 1, 1, 1, 1 )
+text = "Coluna 2"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button3" type="Button" parent="."]
+margin_left = 771.163
+margin_top = 85.967
+margin_right = 838.163
+margin_bottom = 107.967
+rect_scale = Vector2( 1.63868, 1.72435 )
+text = "Coluna 3"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button4" type="Button" parent="."]
+margin_left = 20.1261
+margin_top = 7.937
+margin_right = 79.1261
+margin_bottom = 50.937
+rect_scale = Vector2( 1.63868, 1.72435 )
+text = "<- Back"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button5" type="Button" parent="."]
+margin_left = 922.378
+margin_top = 8.0
+margin_right = 981.378
+margin_bottom = 51.0
+rect_scale = Vector2( 1.63868, 1.72435 )
+text = "Again"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="mago" type="Sprite" parent="."]
+visible = false
+position = Vector2( 842.932, 419.553 )
+scale = Vector2( 0.452156, 0.476816 )
+texture = ExtResource( 12 )
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_Button3_pressed"]
+[connection signal="pressed" from="Button4" to="." method="_on_Button4_pressed"]
+[connection signal="pressed" from="Button5" to="." method="_on_Button5_pressed"]

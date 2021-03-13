@@ -1,0 +1,62 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://label.tscn" type="PackedScene" id=1]
+[ext_resource path="res://menu.gd" type="Script" id=2]
+[ext_resource path="res://imagens/jogo-cartas magicas-label-com-logo.png" type="Texture" id=3]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2( 110.568, 1.41516 )
+scale = Vector2( 1.2948, 1.232 )
+script = ExtResource( 2 )
+
+[node name="labol" parent="." instance=ExtResource( 1 )]
+position = Vector2( 410.301, 295.591 )
+scale = Vector2( 1.38939, 1.46422 )
+texture = ExtResource( 3 )
+
+[node name="Button2" type="Button" parent="."]
+margin_left = 771.0
+margin_top = 508.0
+margin_right = 826.0
+margin_bottom = 533.0
+rect_scale = Vector2( 2.23571, 2.59091 )
+text = "QUIT"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button3" type="Button" parent="."]
+margin_left = 771.0
+margin_top = 426.831
+margin_right = 826.0
+margin_bottom = 451.831
+rect_scale = Vector2( 2.23571, 2.59091 )
+text = "Info"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+margin_left = 278.723
+margin_top = 249.529
+margin_right = 340.723
+margin_bottom = 317.529
+rect_scale = Vector2( 4.30192, 4.27838 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+margin_left = 6.0
+margin_top = 23.0
+margin_right = 56.0
+margin_bottom = 43.0
+
+[node name="Button" type="Button" parent="CenterContainer/VBoxContainer"]
+margin_right = 50.0
+margin_bottom = 20.0
+text = "START"
+[connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_Button3_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/Button" to="." method="_on_Button_pressed"]

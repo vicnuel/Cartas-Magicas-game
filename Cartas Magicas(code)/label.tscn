@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://imagens/tela inicial.png" type="Texture" id=1]
+
+[node name="label" type="Sprite"]
+position = Vector2( 641.85, 361.203 )
+scale = Vector2( 1.79249, 1.77406 )
+texture = ExtResource( 1 )

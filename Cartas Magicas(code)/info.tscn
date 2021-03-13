@@ -1,0 +1,99 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://imagens/github.png" type="Texture" id=1]
+[ext_resource path="res://imagens/insta.png" type="Texture" id=2]
+[ext_resource path="res://imagens/cartas magicas.png" type="Texture" id=3]
+[ext_resource path="res://info.gd" type="Script" id=4]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 642.56, 359.144 )
+scale = Vector2( 1.77433, 1.77454 )
+texture = ExtResource( 3 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 781.689
+margin_top = 58.369
+margin_right = 1014.69
+margin_bottom = 136.369
+rect_scale = Vector2( 2.23657, 2.75554 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Olá, meu nome é Victor.
+Sou um jovem programador que 
+sonhar em ser um físico teorio.
+Me encontre nas redes sociais."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 356.191
+margin_top = 330.728
+margin_right = 573.191
+margin_bottom = 434.728
+rect_scale = Vector2( 2.70024, 2.8 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Programando o cosmo 
+é uma página  no Instagram
+destinada a conteudos
+de programação e 
+divulgação cientifica."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+margin_left = 889.064
+margin_top = 323.342
+margin_right = 1151.06
+margin_bottom = 529.342
+rect_scale = Vector2( 0.689266, 0.650132 )
+custom_colors/font_color = Color( 1, 0.870588, 0, 1 )
+text = "acessar"
+icon = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button2" type="Button" parent="."]
+margin_left = 894.271
+margin_top = 475.111
+margin_right = 1156.27
+margin_bottom = 681.111
+rect_scale = Vector2( 0.689266, 0.650132 )
+custom_colors/font_color = Color( 1, 0.870588, 0, 1 )
+text = "acessar"
+icon = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button3" type="Button" parent="."]
+margin_left = 1087.11
+margin_top = 476.011
+margin_right = 1349.11
+margin_bottom = 682.011
+rect_scale = Vector2( 0.689266, 0.650132 )
+custom_colors/font_color = Color( 1, 0.870588, 0, 1 )
+text = "acessar"
+icon = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button4" type="Button" parent="."]
+margin_left = 23.0
+margin_top = 19.0
+margin_right = 82.0
+margin_bottom = 39.0
+rect_scale = Vector2( 2.43554, 4.29141 )
+text = "<- Inicio"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_Button3_pressed"]
+[connection signal="pressed" from="Button4" to="." method="_on_Button4_pressed"]
